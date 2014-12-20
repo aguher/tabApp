@@ -1,0 +1,70 @@
+<ion-view title="Crear partida">
+	<ion-nav-bar class="bar-gray" animation="nav-title-slide-ios7">
+	  <ion-nav-back-button class="button-clear">
+	    <i class="ion-chevron-left"></i>
+	  </ion-nav-back-button>
+	</ion-nav-bar> 
+
+	<ion-content class="padding">
+
+		<ul class="list">			
+			<li class="items">
+				<label class="item item-input item-select">
+					<div class="input-label">
+						Tiempo
+					</div>
+					<select ng-model="formData.time_match">
+						<option>45</option>
+						<option>60</option>
+						<option>90</option>
+					</select>
+				</label>
+			</li>
+			<li class="items">
+				<label class="item item-input item-select">
+					<div class="input-label">
+						Rondas
+					</div>
+					<select ng-model="formData.rounds">
+						<option>2</option>
+						<option>4</option>
+						<option>6</option>
+					</select>
+				</label>
+			</li>
+			<li class="items">
+				<label class="item item-input item-select">
+					<div class="input-label">
+						Equipos
+					</div>
+					<select ng-model="formData.teams">
+						<option >2</option>
+						<option >3</option>
+						<option >4</option>
+					</select>
+				</label>
+			</li>
+			<li class="item item-toggle">
+				Penalización
+				<label class="toggle toggle-assertive">
+					<input ng-model="formData.penalty" type="checkbox">
+					<div class="track">
+						<div class="handle"></div>
+					</div>
+				</label>
+			</li>
+		</ul>
+	</ion-content>
+	<ion-footer-bar class="dark-green">
+		<div class="content-bottom">
+			<p class="green-button">
+				<span>
+					<a class="button" ng-click="create()">
+						<i class="iconos ion-android-checkmark"></i>
+						Crear los equipos
+					</a>
+				</span>
+			</p>			
+		</div>
+	</ion-footer-bar>
+</ion-view>

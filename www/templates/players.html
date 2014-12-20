@@ -1,0 +1,59 @@
+
+<ion-view title="Creando los equipos">
+	<ion-nav-bar class="bar-gray" animation="nav-title-slide-ios7">
+	  <ion-nav-back-button class="button-clear">
+	    <i class="ion-chevron-left"></i>
+	  </ion-nav-back-button>	  
+	</ion-nav-bar> 
+
+	<ion-content class="padding">	
+		<div class="content-subtitle">
+			<span>
+				Selecciona el número de <br>jugadores de cada equipo
+			</span>
+		</div>	
+		<ul>
+			<li  ng-repeat="team in teams track by $index">
+				<div class="select-team {{team.color}}">
+					<div class="image" >
+						<i class="players ion-ios7-personadd"></i>
+					</div>					
+					<ul class="list list-players">			
+						<li class="items">
+							<div class="item item-input player">
+
+								<span class="input-label">
+									Jugadores							
+								</span>
+								<div class="marker-players">
+									<i class="icon-remove ion-minus-round" ng-click="remove({{$index}})"></i>
+									<span class="num-players">
+										{{team.num_players}}
+									</span>					
+									<i class="icon-add ion-plus-round"  ng-click="add({{$index}})"></i>
+								</div>
+							</div>
+						</li>
+					</ul>				
+				</div>
+			</li>
+		</ul>		
+
+	</ion-content>
+	<ion-footer-bar class="dark-green">
+		<div class="content-bottom">
+			<p class="green-button">
+				<span>
+					<a class="button" ng-click="sendData()">
+						<i class="iconos ion-ios7-play"></i>
+						Crear partida
+					</a>
+				</span>
+			</p>			
+		</div>
+	</ion-footer-bar>	
+	
+</ion-view>
+<div>
+hola:'{{$scope}}'
+</div>

@@ -1,0 +1,11 @@
+JSON_CALLBACK({
+    "code_match": "301a",
+    "teams": [{
+        "id_team": 1,
+        "n_players": 2
+    }, {
+        "id_team": 2,
+        "n_players": 2
+    }]
+
+})

@@ -1,0 +1,36 @@
+<ion-view title="Unete a una partida">
+	<ion-nav-bar class="bar-gray" animation="nav-title-slide-ios7">
+	  <ion-nav-back-button class="button-clear">
+	    <i class="ion-chevron-left"></i>
+	  </ion-nav-back-button>	  
+	</ion-nav-bar> 
+	<ion-content class="padding">
+		<div class="title">	
+			<div>
+				<h3 ng-class="{'hide':ocultar_texto}" class="text-center">Introduce el </br>c&oacute;digo de </br>la partida</h3>
+				<span class="code-border waiting">
+					<input type="text" ng-blur="ocultar_texto=false" ng-focus="ocultar_texto=true" ng-model="$parent.code_match"></input>
+				</span>			
+			</div>
+		</div>	
+		<div class="content-bottom bottom-content-50">
+			<p class="orange-button">
+				<span>
+					<a class="button" ng-click="join()">
+						<i class="iconos ion-paper-airplane"></i>
+						Unirte a la partida
+					</a>
+				</span>
+			</p>
+			<p class="blue-button">			
+				<span>
+					<a class="button" href="#/home">
+						<i class="iconos ion-ios7-undo-outline"></i>
+						Volver
+					</a>
+				</span>
+			</p>
+		</div>
+	</ion-content>
+</ion-view>
+

@@ -1,0 +1,30 @@
+<ion-view title="Partida Creada">
+	<ion-nav-bar class="bar-gray" animation="nav-title-slide-ios7">
+	  <ion-nav-back-button class="button-clear">
+	    <i class="ion-chevron-left"></i>
+	  </ion-nav-back-button>	  
+	</ion-nav-bar> 
+
+	<ion-content class="padding">	
+		<div class="center-vertically">	
+			<div>
+				<h3 class="text-center">Indica a tus amigos</br> el siguiente código</h3>
+				<span class="code-border">{{code_match}}</span>			
+			</div>
+		</div>
+	</ion-content>
+	<ion-footer-bar class="dark-green">
+		<div class="content-bottom">
+			<p class="green-button">
+				<span>
+					<a class="button" ng-click="joinMatch()">
+						<i class="iconos ion-android-share"></i>
+						Elegir Equipo
+					</a>
+				</span>
+			</p>			
+		</div>
+	</ion-footer-bar>	
+
+</ion-view>
+
