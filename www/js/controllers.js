@@ -104,4 +104,11 @@ angular.module('starter.controllers', [])
 
 		$state.go('board');
 	}
+})
+
+.controller('BoardCtrl', function($scope, $state) {
+	$scope.next = function() {
+
+		$state.go('boardScore');
+	}
 });

@@ -66,6 +66,12 @@ var app = angular.module('ionicApp', [
         controller: 'BoardCtrl',
         params: ['code_match', 'action'] 
     });
+    
+    $stateProvider.state('boardScore', {
+        templateUrl: 'templates/boardScore.html',
+        controller: 'BoardScoreCtrl',
+        params: ['code_match', 'action'] 
+    });   
 
 })
 
